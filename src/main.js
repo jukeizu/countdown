@@ -2,8 +2,13 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import VueCountdown from '@chenfengyuan/vue-countdown';
+import VueAnalytics from 'vue-analytics'
 
 Vue.component(VueCountdown.name, VueCountdown);
+
+Vue.use(VueAnalytics, {
+  id: 'UA-171530007-1'
+})
 
 new Vue({
   router,

@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="container">
-      <countdown :time="time" :interval="100" tag="p">
+      <countdown :time="time" :interval="1000" tag="p">
           <template slot-scope="props">
               <h1 v-if="title" >{{title}}</h1>
               <ul>
