@@ -1,10 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import VueCountdown from '@chenfengyuan/vue-countdown';
 import VueAnalytics from 'vue-analytics'
-
-Vue.component(VueCountdown.name, VueCountdown);
+import vueAwesomeCountdown from 'vue-awesome-countdown'
 
 Vue.use(VueAnalytics, {
   id: 'UA-171530007-1',
@@ -13,6 +11,8 @@ Vue.use(VueAnalytics, {
     sendHitTask: process.env.NODE_ENV === 'production'
   }
 })
+
+Vue.use(vueAwesomeCountdown);
 
 new Vue({
   router,
