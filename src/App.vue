@@ -5,9 +5,9 @@
         <template v-slot:default="{ timeObj }">
             <ul>
                 <li><span id="days" class="count">{{ timeObj.d || 0}}</span>Day<span v-if="timeObj.d != 1">s</span></li>
-                <li><span id="hours" class="count">{{ timeObj.h || 0 }}</span>Hours</li>
-                <li><span id="minutes" class="count">{{ timeObj.m || 0 }}</span>Minutes</li>
-                <li><span id="seconds" class="count">{{ timeObj.s || 0 }}</span>Seconds</li>
+                <li><span id="hours" class="count">{{ timeObj.h || 0 }}</span>Hour<span v-if="timeObj.h != 1">s</span></li>
+                <li><span id="minutes" class="count">{{ timeObj.m || 0 }}</span>Minute<span v-if="timeObj.m != 1">s</span></li>
+                <li><span id="seconds" class="count">{{ timeObj.s || 0 }}</span>Second<span v-if="timeObj.s != 1">s</span></li>
             </ul>
             <div v-if="target > 0">
                 Until {{target.toUTCString()}}
