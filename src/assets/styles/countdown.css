@@ -16,7 +16,7 @@ li {
   text-transform: uppercase;
 }
 
-li span {
+.count {
   display: block;
   font-size: 4.5rem;
 }
